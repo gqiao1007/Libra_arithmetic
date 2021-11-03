@@ -3,7 +3,7 @@ class Earth(object):
     _instance = None
     def __new__(cls, *args, **kwargs):
         if cls._instance == None:
-            # 调用父类object的new方法去返回一个实例，传给_instance变量
+            # 调用父类object的new方法去返回object类的一个实例，传给_instance变量
             cls._instance = object.__new__(cls)
         return cls._instance
 
